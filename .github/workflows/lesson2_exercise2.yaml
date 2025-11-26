@@ -23,6 +23,9 @@ jobs:
             echo "state=halt" >> "$GITHUB_OUTPUT"
             echo "Skipping the job `test`..."
           fi
+          # Please note that RANDOM is a bash built-in variable that generates a random integer between 0 and 32767!
+          # so you need a BASH shell to run/test this script! (not Windows cmd or PowerShell)
+          # for local testing, see test.sh and GITHUB_OUTPUT simulation :)
 
   test:
     # Hint: read more about jobs outputs and needs context here: https://docs.github.com/en/actions/learn-github-actions/contexts#needs-context
