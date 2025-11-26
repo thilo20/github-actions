@@ -44,4 +44,4 @@ jobs:
         with:
           node-version: 24
       - run: node -e "console.log('running from node!')"
-      - run: echo npm --version
+      - run: echo `npm --version`
