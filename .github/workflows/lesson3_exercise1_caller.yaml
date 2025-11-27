@@ -1,0 +1,17 @@
+name: "Lesson 3 - Exercise 1 - Caller" # calls the reusable workflow
+
+on:
+    workflow_dispatch:
+        inputs:
+            message:
+                description: "personal message"
+                required: true
+                type: string
+
+jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: thilo20/github-actions/actions/workflows/lesson3_exercise1.yaml@main
+            with:
+                actor: ${{ inputs.message }}

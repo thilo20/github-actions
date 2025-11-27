@@ -1,0 +1,19 @@
+name: "Lesson 3 - Exercise 1" # reuseable workflow
+
+on:
+  workflow_call:
+    inputs:
+      actor:
+        description: "The person who will receive the greeting"
+        required: true
+        type: string
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greetings message
+        run: |
+          echo "Well done: $ACTOR you've implemented reusable workflows successfully!"
+        env:
+          ACTOR: ${{ inputs.actor }}
