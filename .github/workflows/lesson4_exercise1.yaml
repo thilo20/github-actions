@@ -42,12 +42,11 @@ jobs:
             echo "::group::collapsible log section"
             echo "::debug::Set the Octocat variable"
             echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
-            echo "::error title=ADVICE::Missing semicolon, buddy!"
             echo "::endgroup::"
         - name: Demonstrate failing step
           run: |
             echo "::error title=ADVICE::Missing semicolon, buddy!"
-          continue-on-error: true
+          continue-on-error: false
 
     demo-parameters:
         runs-on: ubuntu-latest
