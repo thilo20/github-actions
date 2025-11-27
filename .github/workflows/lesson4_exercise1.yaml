@@ -20,5 +20,5 @@ jobs:
             echo "Body word count: $body_words_count"
 
             ## Add your answer below this line
-            echo "words in title: $title_words_count" >> GITHUB_STEP_SUMMARY
-            echo "words in body:  $body_words_count" >> GITHUB_STEP_SUMMARY
+            echo "words in title: $title_words_count" >> $GITHUB_STEP_SUMMARY
+            echo "words in body:  $body_words_count" >> $GITHUB_STEP_SUMMARY
