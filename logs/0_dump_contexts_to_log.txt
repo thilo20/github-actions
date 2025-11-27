@@ -1,0 +1,526 @@
+﻿2025-11-27T09:20:56.8621372Z Current runner version: '2.329.0'
+2025-11-27T09:20:56.8652660Z ##[group]Runner Image Provisioner
+2025-11-27T09:20:56.8653733Z Hosted Compute Agent
+2025-11-27T09:20:56.8654907Z Version: 20251016.436
+2025-11-27T09:20:56.8655797Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-11-27T09:20:56.8656867Z Build Date: 2025-10-15T20:44:12Z
+2025-11-27T09:20:56.8657886Z ##[endgroup]
+2025-11-27T09:20:56.8658642Z ##[group]Operating System
+2025-11-27T09:20:56.8659436Z Ubuntu
+2025-11-27T09:20:56.8660189Z 24.04.3
+2025-11-27T09:20:56.8660831Z LTS
+2025-11-27T09:20:56.8661522Z ##[endgroup]
+2025-11-27T09:20:56.8662275Z ##[group]Runner Image
+2025-11-27T09:20:56.8663036Z Image: ubuntu-24.04
+2025-11-27T09:20:56.8663798Z Version: 20251112.124.1
+2025-11-27T09:20:56.8665596Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+2025-11-27T09:20:56.8668120Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+2025-11-27T09:20:56.8669691Z ##[endgroup]
+2025-11-27T09:20:56.8671285Z ##[group]GITHUB_TOKEN Permissions
+2025-11-27T09:20:56.8674803Z Contents: read
+2025-11-27T09:20:56.8675562Z Metadata: read
+2025-11-27T09:20:56.8676326Z Packages: read
+2025-11-27T09:20:56.8677035Z ##[endgroup]
+2025-11-27T09:20:56.8679951Z Secret source: Actions
+2025-11-27T09:20:56.8680931Z Prepare workflow directory
+2025-11-27T09:20:56.9406443Z Prepare all required actions
+2025-11-27T09:20:56.9541228Z Complete job name: dump_contexts_to_log
+2025-11-27T09:20:57.0473883Z ##[group]Run echo "$GITHUB_CONTEXT"
+2025-11-27T09:20:57.0475100Z [36;1mecho "$GITHUB_CONTEXT"[0m
+2025-11-27T09:20:57.1076569Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.1078028Z env:
+2025-11-27T09:20:57.1135626Z   GITHUB_CONTEXT: {
+  "token": "***",
+  "job": "dump_contexts_to_log",
+  "ref": "refs/heads/main",
+  "sha": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+  "repository": "thilo20/github-actions",
+  "repository_owner": "thilo20",
+  "repository_owner_id": "17619950",
+  "repositoryUrl": "git://github.com/thilo20/github-actions.git",
+  "run_id": "19731313908",
+  "run_number": "1",
+  "retention_days": "90",
+  "run_attempt": "1",
+  "artifact_cache_size_limit": "10",
+  "repository_visibility": "private",
+  "actor_id": "17619950",
+  "actor": "thilo20",
+  "workflow": "Context testing",
+  "head_ref": "",
+  "base_ref": "",
+  "event_name": "push",
+  "server_url": "https://github.com",
+  "api_url": "https://api.github.com",
+  "graphql_url": "https://api.github.com/graphql",
+  "ref_name": "main",
+  "ref_protected": false,
+  "ref_type": "branch",
+  "secret_source": "Actions",
+  "event": {
+    "after": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+    "base_ref": null,
+    "before": "5872bf88b6e947fb213938e6a9d24875400ce974",
+    "commits": [
+      {
+        "author": {
+          "email": "thilo.schaper@cariad.technology",
+          "name": "thilo20",
+          "username": "thilo20"
+        },
+        "committer": {
+          "email": "thilo.schaper@cariad.technology",
+          "name": "thilo20",
+          "username": "thilo20"
+        },
+        "distinct": true,
+        "id": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+        "message": "workflow to echo all context info",
+        "timestamp": "2025-11-27T10:20:45+01:00",
+        "tree_id": "fb7571b80add0f7ee69e5c113a763c61e3377d15",
+        "url": "https://github.com/thilo20/github-actions/commit/5f85bcf64c74e268a0aebea381db24aa60db2a6c"
+      }
+    ],
+    "compare": "https://github.com/thilo20/github-actions/compare/5872bf88b6e9...5f85bcf64c74",
+    "created": false,
+    "deleted": false,
+    "forced": false,
+    "head_commit": {
+      "author": {
+        "email": "thilo.schaper@cariad.technology",
+        "name": "thilo20",
+        "username": "thilo20"
+      },
+      "committer": {
+        "email": "thilo.schaper@cariad.technology",
+        "name": "thilo20",
+        "username": "thilo20"
+      },
+      "distinct": true,
+      "id": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+      "message": "workflow to echo all context info",
+      "timestamp": "2025-11-27T10:20:45+01:00",
+      "tree_id": "fb7571b80add0f7ee69e5c113a763c61e3377d15",
+      "url": "https://github.com/thilo20/github-actions/commit/5f85bcf64c74e268a0aebea381db24aa60db2a6c"
+    },
+    "pusher": {
+      "email": "thilo.schaper@cariad.technology",
+      "name": "thilo20"
+    },
+    "ref": "refs/heads/main",
+    "repository": {
+      "allow_forking": true,
+      "archive_url": "https://api.github.com/repos/thilo20/github-actions/{archive_format}{/ref}",
+      "archived": false,
+      "assignees_url": "https://api.github.com/repos/thilo20/github-actions/assignees{/user}",
+      "blobs_url": "https://api.github.com/repos/thilo20/github-actions/git/blobs{/sha}",
+      "branches_url": "https://api.github.com/repos/thilo20/github-actions/branches{/branch}",
+      "clone_url": "https://github.com/thilo20/github-actions.git",
+      "collaborators_url": "https://api.github.com/repos/thilo20/github-actions/collaborators{/collaborator}",
+      "comments_url": "https://api.github.com/repos/thilo20/github-actions/comments{/number}",
+      "commits_url": "https://api.github.com/repos/thilo20/github-actions/commits{/sha}",
+      "compare_url": "https://api.github.com/repos/thilo20/github-actions/compare/{base}...{head}",
+      "contents_url": "https://api.github.com/repos/thilo20/github-actions/contents/{+path}",
+      "contributors_url": "https://api.github.com/repos/thilo20/github-actions/contributors",
+      "created_at": 1764158936,
+      "default_branch": "main",
+      "deployments_url": "https://api.github.com/repos/thilo20/github-actions/deployments",
+      "description": "try out various github action features",
+      "disabled": false,
+      "downloads_url": "https://api.github.com/repos/thilo20/github-actions/downloads",
+      "events_url": "https://api.github.com/repos/thilo20/github-actions/events",
+      "fork": false,
+      "forks": 0,
+      "forks_count": 0,
+      "forks_url": "https://api.github.com/repos/thilo20/github-actions/forks",
+      "full_name": "thilo20/github-actions",
+      "git_commits_url": "https://api.github.com/repos/thilo20/github-actions/git/commits{/sha}",
+      "git_refs_url": "https://api.github.com/repos/thilo20/github-actions/git/refs{/sha}",
+      "git_tags_url": "https://api.github.com/repos/thilo20/github-actions/git/tags{/sha}",
+      "git_url": "git://github.com/thilo20/github-actions.git",
+      "has_discussions": false,
+      "has_downloads": true,
+      "has_issues": true,
+      "has_pages": false,
+      "has_projects": true,
+      "has_wiki": false,
+      "homepage": null,
+      "hooks_url": "https://api.github.com/repos/thilo20/github-actions/hooks",
+      "html_url": "https://github.com/thilo20/github-actions",
+      "id": 1104584255,
+      "is_template": false,
+      "issue_comment_url": "https://api.github.com/repos/thilo20/github-actions/issues/comments{/number}",
+      "issue_events_url": "https://api.github.com/repos/thilo20/github-actions/issues/events{/number}",
+      "issues_url": "https://api.github.com/repos/thilo20/github-actions/issues{/number}",
+      "keys_url": "https://api.github.com/repos/thilo20/github-actions/keys{/key_id}",
+      "labels_url": "https://api.github.com/repos/thilo20/github-actions/labels{/name}",
+      "language": null,
+      "languages_url": "https://api.github.com/repos/thilo20/github-actions/languages",
+      "license": null,
+      "master_branch": "main",
+      "merges_url": "https://api.github.com/repos/thilo20/github-actions/merges",
+      "milestones_url": "https://api.github.com/repos/thilo20/github-actions/milestones{/number}",
+      "mirror_url": null,
+      "name": "github-actions",
+      "node_id": "R_kgDOQdaePw",
+      "notifications_url": "https://api.github.com/repos/thilo20/github-actions/notifications{?since,all,participating}",
+      "open_issues": 0,
+      "open_issues_count": 0,
+      "owner": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/17619950?v=4",
+        "email": "thilo.schaper@cariad.technology",
+        "events_url": "https://api.github.com/users/thilo20/events{/privacy}",
+        "followers_url": "https://api.github.com/users/thilo20/followers",
+        "following_url": "https://api.github.com/users/thilo20/following{/other_user}",
+        "gists_url": "https://api.github.com/users/thilo20/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/thilo20",
+        "id": 17619950,
+        "login": "thilo20",
+        "name": "thilo20",
+        "node_id": "MDQ6VXNlcjE3NjE5OTUw",
+        "organizations_url": "https://api.github.com/users/thilo20/orgs",
+        "received_events_url": "https://api.github.com/users/thilo20/received_events",
+        "repos_url": "https://api.github.com/users/thilo20/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/thilo20/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/thilo20/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/thilo20",
+        "user_view_type": "public"
+      },
+      "private": true,
+      "pulls_url": "https://api.github.com/repos/thilo20/github-actions/pulls{/number}",
+      "pushed_at": 1764235248,
+      "releases_url": "https://api.github.com/repos/thilo20/github-actions/releases{/id}",
+      "size": 6,
+      "ssh_url": "git@github.com:thilo20/github-actions.git",
+      "stargazers": 0,
+      "stargazers_count": 0,
+      "stargazers_url": "https://api.github.com/repos/thilo20/github-actions/stargazers",
+      "statuses_url": "https://api.github.com/repos/thilo20/github-actions/statuses/{sha}",
+      "subscribers_url": "https://api.github.com/repos/thilo20/github-actions/subscribers",
+      "subscription_url": "https://api.github.com/repos/thilo20/github-actions/subscription",
+      "svn_url": "https://github.com/thilo20/github-actions",
+      "tags_url": "https://api.github.com/repos/thilo20/github-actions/tags",
+      "teams_url": "https://api.github.com/repos/thilo20/github-actions/teams",
+      "topics": [],
+      "trees_url": "https://api.github.com/repos/thilo20/github-actions/git/trees{/sha}",
+      "updated_at": "2025-11-26T15:30:20Z",
+      "url": "https://api.github.com/repos/thilo20/github-actions",
+      "visibility": "private",
+      "watchers": 0,
+      "watchers_count": 0,
+      "web_commit_signoff_required": false
+    },
+    "sender": {
+      "avatar_url": "https://avatars.githubusercontent.com/u/17619950?v=4",
+      "events_url": "https://api.github.com/users/thilo20/events{/privacy}",
+      "followers_url": "https://api.github.com/users/thilo20/followers",
+      "following_url": "https://api.github.com/users/thilo20/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thilo20/gists{/gist_id}",
+      "gravatar_id": "",
+      "html_url": "https://github.com/thilo20",
+      "id": 17619950,
+      "login": "thilo20",
+      "node_id": "MDQ6VXNlcjE3NjE5OTUw",
+      "organizations_url": "https://api.github.com/users/thilo20/orgs",
+      "received_events_url": "https://api.github.com/users/thilo20/received_events",
+      "repos_url": "https://api.github.com/users/thilo20/repos",
+      "site_admin": false,
+      "starred_url": "https://api.github.com/users/thilo20/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thilo20/subscriptions",
+      "type": "User",
+      "url": "https://api.github.com/users/thilo20",
+      "user_view_type": "public"
+    }
+  },
+  "workflow_ref": "thilo20/github-actions/.github/workflows/dump_context.yaml@refs/heads/main",
+  "workflow_sha": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+  "repository_id": "1104584255",
+  "triggering_actor": "thilo20",
+  "workspace": "/home/runner/work/github-actions/github-actions",
+  "action": "__run"
+}
+2025-11-27T09:20:57.1178327Z ##[endgroup]
+2025-11-27T09:20:57.1633776Z {
+2025-11-27T09:20:57.1655385Z   "token": "***",
+2025-11-27T09:20:57.1656108Z   "job": "dump_contexts_to_log",
+2025-11-27T09:20:57.1657087Z   "ref": "refs/heads/main",
+2025-11-27T09:20:57.1657925Z   "sha": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+2025-11-27T09:20:57.1658905Z   "repository": "thilo20/github-actions",
+2025-11-27T09:20:57.1660178Z   "repository_owner": "thilo20",
+2025-11-27T09:20:57.1661046Z   "repository_owner_id": "17619950",
+2025-11-27T09:20:57.1662150Z   "repositoryUrl": "git://github.com/thilo20/github-actions.git",
+2025-11-27T09:20:57.1663344Z   "run_id": "19731313908",
+2025-11-27T09:20:57.1664105Z   "run_number": "1",
+2025-11-27T09:20:57.1685272Z   "retention_days": "90",
+2025-11-27T09:20:57.1686223Z   "run_attempt": "1",
+2025-11-27T09:20:57.1686959Z   "artifact_cache_size_limit": "10",
+2025-11-27T09:20:57.1687902Z   "repository_visibility": "private",
+2025-11-27T09:20:57.1689047Z   "actor_id": "17619950",
+2025-11-27T09:20:57.1689801Z   "actor": "thilo20",
+2025-11-27T09:20:57.1690551Z   "workflow": "Context testing",
+2025-11-27T09:20:57.1691413Z   "head_ref": "",
+2025-11-27T09:20:57.1692106Z   "base_ref": "",
+2025-11-27T09:20:57.1692772Z   "event_name": "push",
+2025-11-27T09:20:57.1693626Z   "server_url": "https://github.com",
+2025-11-27T09:20:57.1694938Z   "api_url": "https://api.github.com",
+2025-11-27T09:20:57.1695979Z   "graphql_url": "https://api.github.com/graphql",
+2025-11-27T09:20:57.1696978Z   "ref_name": "main",
+2025-11-27T09:20:57.1697745Z   "ref_protected": false,
+2025-11-27T09:20:57.1698531Z   "ref_type": "branch",
+2025-11-27T09:20:57.1699280Z   "secret_source": "Actions",
+2025-11-27T09:20:57.1700118Z   "event": {
+2025-11-27T09:20:57.1700866Z     "after": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+2025-11-27T09:20:57.1702247Z     "base_ref": null,
+2025-11-27T09:20:57.1703374Z     "before": "5872bf88b6e947fb213938e6a9d24875400ce974",
+2025-11-27T09:20:57.1720564Z     "commits": [
+2025-11-27T09:20:57.1721496Z       {
+2025-11-27T09:20:57.1722093Z         "author": {
+2025-11-27T09:20:57.1722864Z           "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1723897Z           "name": "thilo20",
+2025-11-27T09:20:57.1724957Z           "username": "thilo20"
+2025-11-27T09:20:57.1725751Z         },
+2025-11-27T09:20:57.1726442Z         "committer": {
+2025-11-27T09:20:57.1727186Z           "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1728158Z           "name": "thilo20",
+2025-11-27T09:20:57.1729016Z           "username": "thilo20"
+2025-11-27T09:20:57.1729764Z         },
+2025-11-27T09:20:57.1730481Z         "distinct": true,
+2025-11-27T09:20:57.1731351Z         "id": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+2025-11-27T09:20:57.1732398Z         "message": "workflow to echo all context info",
+2025-11-27T09:20:57.1733364Z         "timestamp": "2025-11-27T10:20:45+01:00",
+2025-11-27T09:20:57.1735827Z         "tree_id": "fb7571b80add0f7ee69e5c113a763c61e3377d15",
+2025-11-27T09:20:57.1737450Z         "url": "https://github.com/thilo20/github-actions/commit/5f85bcf64c74e268a0aebea381db24aa60db2a6c"
+2025-11-27T09:20:57.1738808Z       }
+2025-11-27T09:20:57.1739505Z     ],
+2025-11-27T09:20:57.1740614Z     "compare": "https://github.com/thilo20/github-actions/compare/5872bf88b6e9...5f85bcf64c74",
+2025-11-27T09:20:57.1741929Z     "created": false,
+2025-11-27T09:20:57.1742648Z     "deleted": false,
+2025-11-27T09:20:57.1743511Z     "forced": false,
+2025-11-27T09:20:57.1744417Z     "head_commit": {
+2025-11-27T09:20:57.1745139Z       "author": {
+2025-11-27T09:20:57.1746030Z         "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1746950Z         "name": "thilo20",
+2025-11-27T09:20:57.1747769Z         "username": "thilo20"
+2025-11-27T09:20:57.1748551Z       },
+2025-11-27T09:20:57.1749183Z       "committer": {
+2025-11-27T09:20:57.1749936Z         "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1750956Z         "name": "thilo20",
+2025-11-27T09:20:57.1751736Z         "username": "thilo20"
+2025-11-27T09:20:57.1752614Z       },
+2025-11-27T09:20:57.1753350Z       "distinct": true,
+2025-11-27T09:20:57.1754376Z       "id": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+2025-11-27T09:20:57.1755431Z       "message": "workflow to echo all context info",
+2025-11-27T09:20:57.1756408Z       "timestamp": "2025-11-27T10:20:45+01:00",
+2025-11-27T09:20:57.1757417Z       "tree_id": "fb7571b80add0f7ee69e5c113a763c61e3377d15",
+2025-11-27T09:20:57.1759207Z       "url": "https://github.com/thilo20/github-actions/commit/5f85bcf64c74e268a0aebea381db24aa60db2a6c"
+2025-11-27T09:20:57.1760687Z     },
+2025-11-27T09:20:57.1761355Z     "pusher": {
+2025-11-27T09:20:57.1762079Z       "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1763082Z       "name": "thilo20"
+2025-11-27T09:20:57.1763776Z     },
+2025-11-27T09:20:57.1764674Z     "ref": "refs/heads/main",
+2025-11-27T09:20:57.1765408Z     "repository": {
+2025-11-27T09:20:57.1766233Z       "allow_forking": true,
+2025-11-27T09:20:57.1767452Z       "archive_url": "https://api.github.com/repos/thilo20/github-actions/{archive_format}{/ref}",
+2025-11-27T09:20:57.1768848Z       "archived": false,
+2025-11-27T09:20:57.1770212Z       "assignees_url": "https://api.github.com/repos/thilo20/github-actions/assignees{/user}",
+2025-11-27T09:20:57.1771869Z       "blobs_url": "https://api.github.com/repos/thilo20/github-actions/git/blobs{/sha}",
+2025-11-27T09:20:57.1773486Z       "branches_url": "https://api.github.com/repos/thilo20/github-actions/branches{/branch}",
+2025-11-27T09:20:57.1775201Z       "clone_url": "https://github.com/thilo20/github-actions.git",
+2025-11-27T09:20:57.1776924Z       "collaborators_url": "https://api.github.com/repos/thilo20/github-actions/collaborators{/collaborator}",
+2025-11-27T09:20:57.1778973Z       "comments_url": "https://api.github.com/repos/thilo20/github-actions/comments{/number}",
+2025-11-27T09:20:57.1781032Z       "commits_url": "https://api.github.com/repos/thilo20/github-actions/commits{/sha}",
+2025-11-27T09:20:57.1782853Z       "compare_url": "https://api.github.com/repos/thilo20/github-actions/compare/{base}...{head}",
+2025-11-27T09:20:57.1784857Z       "contents_url": "https://api.github.com/repos/thilo20/github-actions/contents/{+path}",
+2025-11-27T09:20:57.1786732Z       "contributors_url": "https://api.github.com/repos/thilo20/github-actions/contributors",
+2025-11-27T09:20:57.1788129Z       "created_at": 1764158936,
+2025-11-27T09:20:57.1788953Z       "default_branch": "main",
+2025-11-27T09:20:57.1790312Z       "deployments_url": "https://api.github.com/repos/thilo20/github-actions/deployments",
+2025-11-27T09:20:57.1791790Z       "description": "try out various github action features",
+2025-11-27T09:20:57.1792826Z       "disabled": false,
+2025-11-27T09:20:57.1794019Z       "downloads_url": "https://api.github.com/repos/thilo20/github-actions/downloads",
+2025-11-27T09:20:57.1795810Z       "events_url": "https://api.github.com/repos/thilo20/github-actions/events",
+2025-11-27T09:20:57.1797001Z       "fork": false,
+2025-11-27T09:20:57.1797750Z       "forks": 0,
+2025-11-27T09:20:57.1798425Z       "forks_count": 0,
+2025-11-27T09:20:57.1799422Z       "forks_url": "https://api.github.com/repos/thilo20/github-actions/forks",
+2025-11-27T09:20:57.1800618Z       "full_name": "thilo20/github-actions",
+2025-11-27T09:20:57.1801962Z       "git_commits_url": "https://api.github.com/repos/thilo20/github-actions/git/commits{/sha}",
+2025-11-27T09:20:57.1803583Z       "git_refs_url": "https://api.github.com/repos/thilo20/github-actions/git/refs{/sha}",
+2025-11-27T09:20:57.1805566Z       "git_tags_url": "https://api.github.com/repos/thilo20/github-actions/git/tags{/sha}",
+2025-11-27T09:20:57.1806936Z       "git_url": "git://github.com/thilo20/github-actions.git",
+2025-11-27T09:20:57.1807972Z       "has_discussions": false,
+2025-11-27T09:20:57.1808855Z       "has_downloads": true,
+2025-11-27T09:20:57.1809640Z       "has_issues": true,
+2025-11-27T09:20:57.1810420Z       "has_pages": false,
+2025-11-27T09:20:57.1811127Z       "has_projects": true,
+2025-11-27T09:20:57.1811986Z       "has_wiki": false,
+2025-11-27T09:20:57.1812714Z       "homepage": null,
+2025-11-27T09:20:57.1813727Z       "hooks_url": "https://api.github.com/repos/thilo20/github-actions/hooks",
+2025-11-27T09:20:57.1815391Z       "html_url": "https://github.com/thilo20/github-actions",
+2025-11-27T09:20:57.1816472Z       "id": 1104584255,
+2025-11-27T09:20:57.1817237Z       "is_template": false,
+2025-11-27T09:20:57.1818834Z       "issue_comment_url": "https://api.github.com/repos/thilo20/github-actions/issues/comments{/number}",
+2025-11-27T09:20:57.1820769Z       "issue_events_url": "https://api.github.com/repos/thilo20/github-actions/issues/events{/number}",
+2025-11-27T09:20:57.1822534Z       "issues_url": "https://api.github.com/repos/thilo20/github-actions/issues{/number}",
+2025-11-27T09:20:57.1824468Z       "keys_url": "https://api.github.com/repos/thilo20/github-actions/keys{/key_id}",
+2025-11-27T09:20:57.1825980Z       "labels_url": "https://api.github.com/repos/thilo20/github-actions/labels{/name}",
+2025-11-27T09:20:57.1827176Z       "language": null,
+2025-11-27T09:20:57.1828367Z       "languages_url": "https://api.github.com/repos/thilo20/github-actions/languages",
+2025-11-27T09:20:57.1829562Z       "license": null,
+2025-11-27T09:20:57.1830305Z       "master_branch": "main",
+2025-11-27T09:20:57.1831432Z       "merges_url": "https://api.github.com/repos/thilo20/github-actions/merges",
+2025-11-27T09:20:57.1833058Z       "milestones_url": "https://api.github.com/repos/thilo20/github-actions/milestones{/number}",
+2025-11-27T09:20:57.1834662Z       "mirror_url": null,
+2025-11-27T09:20:57.1835491Z       "name": "github-actions",
+2025-11-27T09:20:57.1836379Z       "node_id": "R_kgDOQdaePw",
+2025-11-27T09:20:57.1837967Z       "notifications_url": "https://api.github.com/repos/thilo20/github-actions/notifications{?since,all,participating}",
+2025-11-27T09:20:57.1839916Z       "open_issues": 0,
+2025-11-27T09:20:57.1840707Z       "open_issues_count": 0,
+2025-11-27T09:20:57.1841580Z       "owner": {
+2025-11-27T09:20:57.1842610Z         "avatar_url": "https://avatars.githubusercontent.com/u/17619950?v=4",
+2025-11-27T09:20:57.1843831Z         "email": "thilo.schaper@cariad.technology",
+2025-11-27T09:20:57.1845324Z         "events_url": "https://api.github.com/users/thilo20/events{/privacy}",
+2025-11-27T09:20:57.1846710Z         "followers_url": "https://api.github.com/users/thilo20/followers",
+2025-11-27T09:20:57.1848348Z         "following_url": "https://api.github.com/users/thilo20/following{/other_user}",
+2025-11-27T09:20:57.1849808Z         "gists_url": "https://api.github.com/users/thilo20/gists{/gist_id}",
+2025-11-27T09:20:57.1850997Z         "gravatar_id": "",
+2025-11-27T09:20:57.1851978Z         "html_url": "https://github.com/thilo20",
+2025-11-27T09:20:57.1852909Z         "id": 17619950,
+2025-11-27T09:20:57.1853664Z         "login": "thilo20",
+2025-11-27T09:20:57.1854713Z         "name": "thilo20",
+2025-11-27T09:20:57.1855547Z         "node_id": "MDQ6VXNlcjE3NjE5OTUw",
+2025-11-27T09:20:57.1856602Z         "organizations_url": "https://api.github.com/users/thilo20/orgs",
+2025-11-27T09:20:57.1858220Z         "received_events_url": "https://api.github.com/users/thilo20/received_events",
+2025-11-27T09:20:57.1859665Z         "repos_url": "https://api.github.com/users/thilo20/repos",
+2025-11-27T09:20:57.1860690Z         "site_admin": false,
+2025-11-27T09:20:57.1861935Z         "starred_url": "https://api.github.com/users/thilo20/starred{/owner}{/repo}",
+2025-11-27T09:20:57.1863521Z         "subscriptions_url": "https://api.github.com/users/thilo20/subscriptions",
+2025-11-27T09:20:57.1865028Z         "type": "User",
+2025-11-27T09:20:57.1865927Z         "url": "https://api.github.com/users/thilo20",
+2025-11-27T09:20:57.1866963Z         "user_view_type": "public"
+2025-11-27T09:20:57.1867792Z       },
+2025-11-27T09:20:57.1868463Z       "private": true,
+2025-11-27T09:20:57.1869703Z       "pulls_url": "https://api.github.com/repos/thilo20/github-actions/pulls{/number}",
+2025-11-27T09:20:57.1870988Z       "pushed_at": 1764235248,
+2025-11-27T09:20:57.1872232Z       "releases_url": "https://api.github.com/repos/thilo20/github-actions/releases{/id}",
+2025-11-27T09:20:57.1873503Z       "size": 6,
+2025-11-27T09:20:57.1874519Z       "ssh_url": "git@github.com:thilo20/github-actions.git",
+2025-11-27T09:20:57.1875800Z       "stargazers": 0,
+2025-11-27T09:20:57.1876587Z       "stargazers_count": 0,
+2025-11-27T09:20:57.1877848Z       "stargazers_url": "https://api.github.com/repos/thilo20/github-actions/stargazers",
+2025-11-27T09:20:57.1879709Z       "statuses_url": "https://api.github.com/repos/thilo20/github-actions/statuses/{sha}",
+2025-11-27T09:20:57.1881492Z       "subscribers_url": "https://api.github.com/repos/thilo20/github-actions/subscribers",
+2025-11-27T09:20:57.1883226Z       "subscription_url": "https://api.github.com/repos/thilo20/github-actions/subscription",
+2025-11-27T09:20:57.1884978Z       "svn_url": "https://github.com/thilo20/github-actions",
+2025-11-27T09:20:57.1886385Z       "tags_url": "https://api.github.com/repos/thilo20/github-actions/tags",
+2025-11-27T09:20:57.1887818Z       "teams_url": "https://api.github.com/repos/thilo20/github-actions/teams",
+2025-11-27T09:20:57.1889010Z       "topics": [],
+2025-11-27T09:20:57.1890144Z       "trees_url": "https://api.github.com/repos/thilo20/github-actions/git/trees{/sha}",
+2025-11-27T09:20:57.1891485Z       "updated_at": "2025-11-26T15:30:20Z",
+2025-11-27T09:20:57.1892603Z       "url": "https://api.github.com/repos/thilo20/github-actions",
+2025-11-27T09:20:57.1893740Z       "visibility": "private",
+2025-11-27T09:20:57.1894749Z       "watchers": 0,
+2025-11-27T09:20:57.1895451Z       "watchers_count": 0,
+2025-11-27T09:20:57.1896246Z       "web_commit_signoff_required": false
+2025-11-27T09:20:57.1897014Z     },
+2025-11-27T09:20:57.1897683Z     "sender": {
+2025-11-27T09:20:57.1898645Z       "avatar_url": "https://avatars.githubusercontent.com/u/17619950?v=4",
+2025-11-27T09:20:57.1900219Z       "events_url": "https://api.github.com/users/thilo20/events{/privacy}",
+2025-11-27T09:20:57.1901573Z       "followers_url": "https://api.github.com/users/thilo20/followers",
+2025-11-27T09:20:57.1902976Z       "following_url": "https://api.github.com/users/thilo20/following{/other_user}",
+2025-11-27T09:20:57.1904685Z       "gists_url": "https://api.github.com/users/thilo20/gists{/gist_id}",
+2025-11-27T09:20:57.1905786Z       "gravatar_id": "",
+2025-11-27T09:20:57.1906643Z       "html_url": "https://github.com/thilo20",
+2025-11-27T09:20:57.1907537Z       "id": 17619950,
+2025-11-27T09:20:57.1908244Z       "login": "thilo20",
+2025-11-27T09:20:57.1909048Z       "node_id": "MDQ6VXNlcjE3NjE5OTUw",
+2025-11-27T09:20:57.1910108Z       "organizations_url": "https://api.github.com/users/thilo20/orgs",
+2025-11-27T09:20:57.1911669Z       "received_events_url": "https://api.github.com/users/thilo20/received_events",
+2025-11-27T09:20:57.1913038Z       "repos_url": "https://api.github.com/users/thilo20/repos",
+2025-11-27T09:20:57.1914379Z       "site_admin": false,
+2025-11-27T09:20:57.1915435Z       "starred_url": "https://api.github.com/users/thilo20/starred{/owner}{/repo}",
+2025-11-27T09:20:57.1916846Z       "subscriptions_url": "https://api.github.com/users/thilo20/subscriptions",
+2025-11-27T09:20:57.1918119Z       "type": "User",
+2025-11-27T09:20:57.1918914Z       "url": "https://api.github.com/users/thilo20",
+2025-11-27T09:20:57.1919857Z       "user_view_type": "public"
+2025-11-27T09:20:57.1920706Z     }
+2025-11-27T09:20:57.1921352Z   },
+2025-11-27T09:20:57.1922481Z   "workflow_ref": "thilo20/github-actions/.github/workflows/dump_context.yaml@refs/heads/main",
+2025-11-27T09:20:57.1924075Z   "workflow_sha": "5f85bcf64c74e268a0aebea381db24aa60db2a6c",
+2025-11-27T09:20:57.1925415Z   "repository_id": "1104584255",
+2025-11-27T09:20:57.1926203Z   "triggering_actor": "thilo20",
+2025-11-27T09:20:57.1927314Z   "workspace": "/home/runner/work/github-actions/github-actions",
+2025-11-27T09:20:57.1928358Z   "action": "__run"
+2025-11-27T09:20:57.1929008Z }
+2025-11-27T09:20:57.2058608Z ##[group]Run echo "$JOB_CONTEXT"
+2025-11-27T09:20:57.2059598Z [36;1mecho "$JOB_CONTEXT"[0m
+2025-11-27T09:20:57.2089577Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.2090330Z env:
+2025-11-27T09:20:57.2091308Z   JOB_CONTEXT: {
+  "check_run_id": 56532807970,
+  "status": "success"
+}
+2025-11-27T09:20:57.2092324Z ##[endgroup]
+2025-11-27T09:20:57.2160924Z {
+2025-11-27T09:20:57.2163156Z   "check_run_id": 56532807970,
+2025-11-27T09:20:57.2165527Z   "status": "success"
+2025-11-27T09:20:57.2167049Z }
+2025-11-27T09:20:57.2224399Z ##[group]Run echo "$STEPS_CONTEXT"
+2025-11-27T09:20:57.2225367Z [36;1mecho "$STEPS_CONTEXT"[0m
+2025-11-27T09:20:57.2253001Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.2253862Z env:
+2025-11-27T09:20:57.2254715Z   STEPS_CONTEXT: {}
+2025-11-27T09:20:57.2255394Z ##[endgroup]
+2025-11-27T09:20:57.2323606Z {}
+2025-11-27T09:20:57.2373791Z ##[group]Run echo "$RUNNER_CONTEXT"
+2025-11-27T09:20:57.2375013Z [36;1mecho "$RUNNER_CONTEXT"[0m
+2025-11-27T09:20:57.2402622Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.2403545Z env:
+2025-11-27T09:20:57.2406123Z   RUNNER_CONTEXT: {
+  "os": "Linux",
+  "arch": "X64",
+  "name": "GitHub Actions 1000000068",
+  "environment": "github-hosted",
+  "tool_cache": "/opt/hostedtoolcache",
+  "temp": "/home/runner/work/_temp",
+  "workspace": "/home/runner/work/github-actions"
+}
+2025-11-27T09:20:57.2408624Z ##[endgroup]
+2025-11-27T09:20:57.2477155Z {
+2025-11-27T09:20:57.2477786Z   "os": "Linux",
+2025-11-27T09:20:57.2478592Z   "arch": "X64",
+2025-11-27T09:20:57.2479324Z   "name": "GitHub Actions 1000000068",
+2025-11-27T09:20:57.2480185Z   "environment": "github-hosted",
+2025-11-27T09:20:57.2481079Z   "tool_cache": "/opt/hostedtoolcache",
+2025-11-27T09:20:57.2481992Z   "temp": "/home/runner/work/_temp",
+2025-11-27T09:20:57.2482964Z   "workspace": "/home/runner/work/github-actions"
+2025-11-27T09:20:57.2484310Z }
+2025-11-27T09:20:57.2641445Z ##[group]Run echo "$STRATEGY_CONTEXT"
+2025-11-27T09:20:57.2642320Z [36;1mecho "$STRATEGY_CONTEXT"[0m
+2025-11-27T09:20:57.2671046Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.2671709Z env:
+2025-11-27T09:20:57.2672691Z   STRATEGY_CONTEXT: {
+  "fail-fast": true,
+  "job-index": 0,
+  "job-total": 1,
+  "max-parallel": 1
+}
+2025-11-27T09:20:57.2673921Z ##[endgroup]
+2025-11-27T09:20:57.2768497Z {
+2025-11-27T09:20:57.2769055Z   "fail-fast": true,
+2025-11-27T09:20:57.2769672Z   "job-index": 0,
+2025-11-27T09:20:57.2770243Z   "job-total": 1,
+2025-11-27T09:20:57.2770790Z   "max-parallel": 1
+2025-11-27T09:20:57.2771379Z }
+2025-11-27T09:20:57.2820233Z ##[group]Run echo "$MATRIX_CONTEXT"
+2025-11-27T09:20:57.2821052Z [36;1mecho "$MATRIX_CONTEXT"[0m
+2025-11-27T09:20:57.2848492Z shell: /usr/bin/bash -e {0}
+2025-11-27T09:20:57.2849138Z env:
+2025-11-27T09:20:57.2849644Z   MATRIX_CONTEXT: null
+2025-11-27T09:20:57.2850230Z ##[endgroup]
+2025-11-27T09:20:57.2925008Z null
+2025-11-27T09:20:57.2983886Z Cleaning up orphan processes
