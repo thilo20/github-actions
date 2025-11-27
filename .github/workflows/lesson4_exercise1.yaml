@@ -59,6 +59,7 @@ jobs:
                 echo "SELECTED_COLOR=red" >> "$GITHUB_OUTPUT"
               else
                 echo "SELECTED_COLOR=blue" >> "$GITHUB_OUTPUT"
+              fi
           - name: Get color
             env:
               SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
