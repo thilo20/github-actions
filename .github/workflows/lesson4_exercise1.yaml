@@ -32,11 +32,11 @@ jobs:
             echo "see GitHub Actions docs about
                 (Workflow Commands, Setting an error message)https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
             echo "please inspect the log for details"
-            ::group::{section}
+            echo "::group::collapsible log section"
             echo "::debug::Set the Octocat variable"
             echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
             echo "::error title=ADVICE::Missing semicolon, buddy!"
-            ::endgroup::
+            echo "::endgroup::"
         - name: Demonstrate failing step
           run: |
             echo "::error title=ADVICE::Missing semicolon, buddy!"
