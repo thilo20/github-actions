@@ -7,6 +7,12 @@ jobs:
     test:
       runs-on: ubuntu-latest
       steps:
+        - name: List all environment variables
+          run: |
+            echo "Listing all environment variables on bash:"
+            printenv            
+            echo "Test direct access to repo variable MAXIMUM_ATTEMPTS: ${{ vars.MAXIMUM_ATTEMPTS }}"
+
         - name: Prevent reruns
           run: |
             # Exit if the run number is greater than the maximum number of attempts
