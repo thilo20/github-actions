@@ -58,7 +58,7 @@ jobs:
       # ----------------------------------
       # ...
       - name: Download primes artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v6
         with:
           name: primes-artifact
           path: primes.txt
