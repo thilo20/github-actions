@@ -1,6 +1,11 @@
 name: "Lesson 4 - Exercise 1"
 
 on:
+    push:
+      branches:
+        - main
+      paths:
+        - '.github/workflows/lesson4_exercise1.yaml' # auto-run on changes to this file
     workflow_dispatch:
 
 jobs:
@@ -28,10 +33,12 @@ jobs:
       steps:
         - name: Demonstrate workflow commands
           run: |
-            echo "# Use Markdown!"
+            echo "# Use Markdown!" >> $GITHUB_STEP_SUMMARY
             echo "see GitHub Actions docs about
                 (Workflow Commands, Setting an error message)https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
-            echo "please inspect the log for details"
+                 >> $GITHUB_STEP_SUMMARY
+            echo "please inspect the log for details" >> $GITHUB_STEP_SUMMARY
+
             echo "::group::collapsible log section"
             echo "::debug::Set the Octocat variable"
             echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
