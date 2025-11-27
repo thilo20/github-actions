@@ -35,7 +35,7 @@ jobs:
           run: |
             echo "# Use Markdown!" >> $GITHUB_STEP_SUMMARY
             echo "see GitHub Actions docs about
-                (Workflow Commands, Setting an error message)https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
+                [Workflow Commands, Setting an error message](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
                  >> $GITHUB_STEP_SUMMARY
             echo "please inspect the log for details" >> $GITHUB_STEP_SUMMARY
 
