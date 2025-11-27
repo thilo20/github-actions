@@ -22,3 +22,34 @@ jobs:
             ## Add your answer below this line
             echo "words in title: $title_words_count" >> $GITHUB_STEP_SUMMARY
             echo "words in body:  $body_words_count" >> $GITHUB_STEP_SUMMARY
+
+    demo-commands:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Demonstrate workflow commands
+          run: |
+            echo "# Use Markdown!"
+            echo "see GitHub Actions docs about
+                (Workflow Commands, Setting an error message)https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
+            echo "please inspect the log for details"
+            ::group::{section}
+            echo "::debug::Set the Octocat variable"
+            echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
+            echo "::error title=ADVICE::Missing semicolon, buddy!"
+            ::endgroup::
+
+    demo-parameters:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Set color to either red or blue randomly
+            id: color-selector
+            run: |
+              if [ $((RANDOM % 2)) -eq 0 ]; then
+                echo "SELECTED_COLOR=red" >> "$GITHUB_OUTPUT"
+              else
+                echo "SELECTED_COLOR=blue" >> "$GITHUB_OUTPUT"
+          - name: Get color
+            env:
+              SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
+            run: |
+              echo "The selected color is $SELECTED_COLOR" >> $GITHUB_STEP_SUMMARY
