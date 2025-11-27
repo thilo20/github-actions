@@ -37,6 +37,10 @@ jobs:
             echo "::warning file=app.js,line=1,col=5,endColumn=7,title=YOUR-TITLE::Missing semicolon"
             echo "::error title=ADVICE::Missing semicolon, buddy!"
             ::endgroup::
+        - name: Demonstrate failing step
+          run: |
+            echo "::error title=ADVICE::Missing semicolon, buddy!"
+          continue-on-error: true
 
     demo-parameters:
         runs-on: ubuntu-latest
