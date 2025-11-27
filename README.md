@@ -22,3 +22,12 @@ https://docs.github.com/en/actions/reference/workflows-and-actions/reusing-workf
 
 ### Structure of Composite Actions
 Unlike regular workflows, composite actions are defined in a single YAML file. This file outlines the action's name, description, inputs, and the steps it will perform.
+
+### Workflow commands
+echo "see GitHub Actions docs about
+    [Workflow Commands, Setting an error message](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-commands#setting-an-error-message)"
+        >> $GITHUB_STEP_SUMMARY
+
+This part is not yet working properly in [lesson4_exercise1](.github\workflows\lesson4_exercise1.yaml).
+Google search shows many libs for more convenient functionality, e.g. Handlebars templates.
+See also https://github.blog/news-insights/product-news/supercharging-github-actions-with-job-summaries/
