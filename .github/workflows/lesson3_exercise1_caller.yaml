@@ -9,9 +9,7 @@ on:
                 type: string
 
 jobs:
-    test:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: thilo20/github-actions/actions/workflows/lesson3_exercise1.yaml@main
-            with:
-                actor: ${{ inputs.message }}
+    reuseable_workflow_caller:
+        uses: thilo20/github-actions/.github/workflows/lesson3_exercise1.yaml@main
+        with:
+            actor: ${{ inputs.message }}
