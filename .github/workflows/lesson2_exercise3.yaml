@@ -1,0 +1,27 @@
+name: "Lesson 2 - Exercise 3"
+
+on:
+    workflow_dispatch:
+
+jobs:
+    test:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Prevent reruns
+          run: |
+            # Exit if the run number is greater than the maximum number of attempts
+            if [ $RUN_ATTEMPT_NUMBER -gt $MAXIMUM_ATTEMPTS ]; then
+              echo "Exiting because the run number is greater than the maximum number of attempts"
+              exit 1
+            fi
+          # Add your solution below this line
+          env:
+            MAXIMUM_ATTEMPTS: ${{ vars.MAXIMUM_ATTEMPTS }}
+            RUN_ATTEMPT_NUMBER: ${{ github.run_attempt }}
+          # Hint: read more about the github context here: https://docs.github.com/en/actions/learn-github-actions/contexts#github-context
+          # Hint: read more about setting job level environment variables here: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idenv
+
+        - name: Run job
+          run: |
+            echo "Running job, attempt ${{ github.run_attempt }}"
+            sleep 1
