@@ -1,0 +1,21 @@
+name: React on new GitHub issues
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add thank you comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_REPO:  ${{ github.repository }}
+            NUMBER: ${{ github.event.issue.number }}
+            BODY: |
+                Thank you for your interest! :sparkles:
+                We appreciate your contribution to the project.
+
+            # Github CLI docs see https://cli.github.com/manual/gh_help_environment
