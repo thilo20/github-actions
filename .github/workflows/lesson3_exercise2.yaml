@@ -58,10 +58,10 @@ jobs:
       # ----------------------------------
       # ...
       - name: Download primes artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v6
         with:
           name: primes-artifact
-          path: primes.txt
+          path: . # for some stupid reason, this is the target directory where to extract the artifact zip file
 
       - name: Verify the generated primes
         shell: python
