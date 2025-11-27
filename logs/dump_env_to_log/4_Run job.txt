@@ -1,0 +1,6 @@
+﻿2025-11-27T10:09:05.7125890Z ##[group]Run echo "Running job, attempt 1"
+2025-11-27T10:09:05.7126844Z [36;1mecho "Running job, attempt 1"[0m
+2025-11-27T10:09:05.7127377Z [36;1msleep 1[0m
+2025-11-27T10:09:05.7158868Z shell: /usr/bin/bash -e {0}
+2025-11-27T10:09:05.7159353Z ##[endgroup]
+2025-11-27T10:09:05.7213639Z Running job, attempt 1

@@ -1,0 +1,11 @@
+﻿2025-11-27T10:09:05.6992165Z ##[group]Run # Exit if the run number is greater than the maximum number of attempts
+2025-11-27T10:09:05.6993199Z [36;1m# Exit if the run number is greater than the maximum number of attempts[0m
+2025-11-27T10:09:05.6994004Z [36;1mif [ $RUN_ATTEMPT_NUMBER -gt $MAXIMUM_ATTEMPTS ]; then[0m
+2025-11-27T10:09:05.6994868Z [36;1m  echo "Exiting because the run number is greater than the maximum number of attempts"[0m
+2025-11-27T10:09:05.6995624Z [36;1m  exit 1[0m
+2025-11-27T10:09:05.6995992Z [36;1mfi[0m
+2025-11-27T10:09:05.7029701Z shell: /usr/bin/bash -e {0}
+2025-11-27T10:09:05.7030175Z env:
+2025-11-27T10:09:05.7030535Z   MAXIMUM_ATTEMPTS: 2
+2025-11-27T10:09:05.7030949Z   RUN_ATTEMPT_NUMBER: 1
+2025-11-27T10:09:05.7031352Z ##[endgroup]
